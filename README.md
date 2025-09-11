@@ -16,8 +16,7 @@ This project implements a complete pipeline for quantitative portfolio managemen
 
 1.  **Clone the repository:**
     ```bash
-    git clone <[your-repo-url](https://github.com/Fatihasln/Quantitative_Portfolio_Management
-)>
+    git clone <[(https://github.com/Fatihasln/Quantitative_Portfolio_Management)]
     cd Multi_Asset_Portfolio_Optimization_and_Risk_Analysis
     ```
 
