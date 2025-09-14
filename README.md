@@ -30,14 +30,6 @@ This project implements a complete pipeline for quantitative portfolio managemen
 1.  **Run the Jupyter Notebook:**
     Open and run all cells in the `Multi_Asset_Portfolio_Optimization_and_Risk_Analysis.ipynb` notebook.
 
-2.  **Configure the Asset Universe (Optional):**
-    Modify the `tickers` list in the first code cell to analyze your own set of assets.
-    ```python
-    tickers = ['SPY', 'QQQ', 'TLT', 'GLD', 'IYR', 'AAPL', 'MSFT', ...]
-    ```
-
-3.  **Adjust Parameters (Optional):**
-    Change the `start_date`, `end_date`, `rebalance_frequency`, `lookback_window`, or Monte Carlo `num_simulations` and `num_years` to suit your analysis.
 
 ## 📁 Project Structure
 
