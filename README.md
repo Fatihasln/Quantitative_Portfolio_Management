@@ -1,4 +1,6 @@
 Multi-Asset Portfolio Optimization and Risk Analysis Project
+
+
 This project is a comprehensive Jupyter Notebook that demonstrates how to optimize a multi-asset portfolio and analyze its risk using financial modeling techniques such as Modern Portfolio Theory (MPT) and Monte Carlo simulation.
 
 Project Introduction
@@ -37,6 +39,7 @@ Project Stages and Technical Details
 Stage 1: Data Fetching and Pre-processing
 The project analyzes a portfolio of 15 different assets (various ETFs and S&P 500 stocks). Daily closing prices from 2006-01-01 to 2023-12-31 are downloaded using the yfinance.download() function. Missing data (NaN) are cleaned using the dropna() method, and daily returns are calculated using the pct_change() function.
 
+
 Stage 2: Exploratory Data Analysis
 This stage examines the fundamental statistical characteristics of the assets:
 
@@ -49,6 +52,7 @@ Annualized Volatility = returns.std() * np.sqrt(252)
 Correlation Matrix: returns.corr() calculates the correlations between assets. A heatmap is plotted to visualize these relationships, which helps in understanding the potential for portfolio diversification.
 
 Rolling Correlation: The rolling() method is used to dynamically analyze how the correlation between assets (e.g., SPY and AAPL) changes over time, showing how asset relationships can shift with market conditions.
+
 
 Stage 3: Portfolio Optimization with Modern Portfolio Theory
 This is the core of the project, solving two primary optimization problems:
@@ -85,6 +89,7 @@ Minimum Variance: The minimize function is also used to find the weights that re
 
 Efficient Frontier: 25,000 random portfolios are generated (using a Monte Carlo simulation) to visualize the possible risk-return combinations. The graph plots these random portfolios along with the highlighted optimal portfolios.
 
+
 Stage 4: Advanced Risk Analysis
 To gain a deeper understanding of the risks associated with the Maximum Sharpe Ratio Portfolio, the following analyses are performed on its returns series:
 
@@ -101,6 +106,7 @@ Historical Stress Tests: These tests evaluate the portfolio's resilience against
 2008 Financial Crisis (Sep 2008 - Mar 2009): The cumulative loss of the portfolio during this period is calculated.
 
 COVID-19 Pandemic Crash (Feb-Mar 2020): The cumulative loss during this crash is also calculated.
+
 
 Stage 5: Dynamic Portfolio Backtesting
 Instead of using a static portfolio, this stage simulates a more realistic dynamic management strategy.
@@ -120,6 +126,7 @@ Max Drawdown: The largest peak-to-trough decline during the backtesting period.
 Sharpe and Sortino Ratios: Risk-adjusted return metrics.
 
 Benchmark Comparison: The portfolio's performance is analyzed against a benchmark index like the SPY ETF.
+
 
 Stage 6: Monte Carlo Simulation for Future Projections
 Finally, a Monte Carlo simulation is performed to project the portfolio's potential future performance.
